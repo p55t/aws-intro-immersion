@@ -32,8 +32,8 @@ the IIS web server installed upon boot.
 > ![](./media0/image2.png)
 
 3.  Scroll down and click **Select** on the Windows Server 2012 R2 Base
-    AMI.**\
-    **![](./media0/image3.png)
+    AMI.\
+    ![](./media0/image3.png)
 
 4.  In the **Choose Instance Type** tab, select the **t2.medium**
     instance size and click **Next: Configure Instance Details**
