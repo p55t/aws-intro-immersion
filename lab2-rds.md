@@ -29,10 +29,9 @@ with an application server running in an EC2 instance in the same VPC
 and that is accessed by a client application outside the VPC. To this
 end, we'll need to utilize a VPC security group to allow this access.
 
-If you've already completed the instructions in the "Immersion Day --
-Getting Started with EC2" lab manual, you'll have an existing EC2
+If you've already completed the instructions in the "Lab 0: Eastic Compute Cloud (EC2) Hands-on Lab" lab manual, you'll have an existing EC2
 instance with an existing security group. The name will be "\[Initials\]
--- Immersion Day Web Tier." Let's create a new VPC security group for
+-- Web Server." Let's create a new VPC security group for
 our database tier that only allows traffic from our web tier. In the VPC
 dashboard, click **Security Groups**, then the **Create Security Group**
 button. Set *Name tag* and *group name* to "\[Initials\] - Immersion Day
