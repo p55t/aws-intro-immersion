@@ -1,13 +1,11 @@
 ![Image result for aws
 logo](./media1/image1.jpeg)
 
-Immersion Day
 
 VPC Hands-On Lab
-
+================
 Getting Started with Virtual Private Cloud
-
- 
+==========================================
 
 Virtual Private Cloud (VPC) Overview
 ====================================
