@@ -1,6 +1,8 @@
 ![Image result for aws
 logo](./media0/image1.jpeg)
 
+# Lab 2: Amazon Relational Database Service (RDS) Hands-On Lab
+
 Overview
 ========
 
