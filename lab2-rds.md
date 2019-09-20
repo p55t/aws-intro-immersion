@@ -12,7 +12,7 @@ resizable capacity while managing time-consuming database administration
 tasks, freeing you up to focus on your applications and business.
 
 > ![](./media2/image2.emf) This lab has a
-> prerequisite of *Immersion Day -- Getting Started with EC2* in order
+> prerequisite of *Lab 0: Eastic Compute Cloud (EC2) Hands-on Lab* in order
 > to complete. This part of the lab will demonstrate configuring a
 > previously created web server in the *Immersion Day -- Getting Started
 > with EC2* lab to use RDS for its Relational Database Management System
@@ -21,7 +21,7 @@ tasks, freeing you up to focus on your applications and business.
 Add a VPC Instance Security Group
 =================================
 
-Prerequisite: Immersion Day -- Getting Started with EC2
+Prerequisite: https://github.com/p55t/aws-intro-immersion/blob/master/lab0-ec2.md
 
 The RDS servers have the same security model as Amazon EC2 overall:
 trust nothing. A common use of an RDS instance in a VPC is to share data
