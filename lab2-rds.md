@@ -1,4 +1,7 @@
-![](./media2/image1.png)
+![Image result for aws
+logo](./media0/image1.jpeg)
+
+# Lab 2: Relational Database Serices (RDS) Hands-on Lab
 
 Overview
 ========
@@ -16,7 +19,7 @@ Apache/PHP, and install a basic web page that will display information
 about our instance.
 
 Sign into your AWS Management Console and choose EC2 from the Services
-menu. [ ]{.underline}
+menu.
 
 1.  Click on Launch Instance
 
@@ -36,11 +39,9 @@ menu. [ ]{.underline}
     Data** field (this shell script will install Apache & PHP, start the
     web service, and deploy a simple web page). Click **Next.**
 
-+---------------------------------------------------------+
-| \#include                                               |
-|                                                         |
-| https://s3.amazonaws.com/immersionday-labs/bootstrap.sh |
-+---------------------------------------------------------+
+>#include                                              
+>https://s3.amazonaws.com/immersionday-labs/bootstrap.sh
+
 
 5.  On this page you have the ability to modify or add storage and disk
     drives to the instance. For this lab, we will simply accept the
