@@ -50,8 +50,8 @@ the IIS web server installed upon boot.
 >
 > For further information on User Data please refer to the documentation
 > at -
-> <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-instance-metadata.html>.***\
-> ***
+> <http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-instance-metadata.html>.
+>
 >
 > On the **Step 4: Add Storage** screen, Click **Next: Add Tags** to
 > accept the default Storage Device Configuration and move to the Step
@@ -129,12 +129,9 @@ section during creation of the instance.
 When complete, you will see the Status Checks have passed.
 
 > ![](./media0/image13.png)
+> ![](./media0/image14.png)
 
-2.  ![](./media0/image14.png)Open a new browser tab and browse the
-    Web Server by entering the EC2 instance's Public DNS name into the
-    browser. The EC2 instance's Public DNS name can be found in the
-    console by reviewing the "Public DNS" column. You should see a page
-    that looks similar to this:
+2. Open a new browser tab and browse the Web Server by entering the EC2 instance's Public DNS name into the browser. The EC2 instance's Public DNS name can be found in the console by reviewing the "Public DNS" column. You should see a page that looks similar to this:
 
 Great Job: You have built your first web server!
 
