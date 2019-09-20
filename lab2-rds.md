@@ -184,9 +184,9 @@ MySQL RDS Instance.
 > ![](./media2/image15.png)
 
 19. Under *Additional Configuraton*, enter a Initial Database name called "immersionday" and
-    accept the defaults for *database port, parameter group, option
+    accept the defaults for * parameter group, option
     group* and *IAM DB authentication*. Leave the default options for
-    the rest of the configuration groups (*Encryption, Backup,
+    the rest of the configurations (*Encryption, Backup,
     Monitoring, Log exports* and *Maintenance*).
 
 ![](./media2/image16.png)
