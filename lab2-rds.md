@@ -204,8 +204,6 @@ MySQL RDS Instance.
 Configure Instance to Leverage RDS
 ==================================
 
-Prerequisite: Immersion Day -- Getting Started with EC2
-
 We provided an example database table and sample code for creating a
 simple address book. Before configuring your instance, you will need to
 get the URL for your database endpoint.
