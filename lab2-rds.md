@@ -167,8 +167,8 @@ MySQL RDS Instance.
 
 ![](./media2/image14.png)
 
-18. In **Configure Advanced Settings,** fill out *Network & Security*
-    with the following information:
+18. In **Connectivity (expand - Additional connectivity configuration)**
+    fill up with the following information:
 
 -   VPC: Default VPC
 
@@ -183,7 +183,7 @@ MySQL RDS Instance.
 
 > ![](./media2/image15.png)
 
-19. Under *Database Options*, enter a DB name called "immersionday" and
+19. Under *Additional Configuraton*, enter a Initial Database name called "immersionday" and
     accept the defaults for *database port, parameter group, option
     group* and *IAM DB authentication*. Leave the default options for
     the rest of the configuration groups (*Encryption, Backup,
