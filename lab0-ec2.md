@@ -130,7 +130,9 @@ When complete, you will see the Status Checks have passed.
 
 > ![](./media0/image13.png)
 
-2. Open a new browser tab and browse the Web Server by entering the EC2 instance's Public DNS name into the browser. The EC2 instance's Public DNS name can be found in the console by reviewing the "Public DNS" column. You should see a page that looks similar to this:
+2. Open a new browser tab and browse the Web Server by entering the EC2 instance's Public DNS name into the browser. The EC2 instance's Public DNS name can be found in the console by reviewing the "Public DNS" column. <b>(ENSURE THAT YOU INCLUDE HTTP://)</b> 
+
+You should see a page that looks similar to this:
 
 > ![](./media0/image14.png)
 
