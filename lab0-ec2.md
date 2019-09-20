@@ -1,6 +1,5 @@
 ![Image result for aws
-logo](./media/image1.jpeg){width="1.629630358705162in"
-height="1.2270581802274716in"}
+logo](./media0/image1.jpeg)
 
 Table of Contents {#table-of-contents .TOCHeading}
 =================
@@ -48,17 +47,16 @@ the IIS web server installed upon boot.
 
 2.  Click on **Launch Instance**
 
-> ![](./media/image2.png){width="7.0in" height="4.104861111111111in"}
+> ![](./media0/image2.png)
 
 3.  Scroll down and click **Select** on the Windows Server 2012 R2 Base
     AMI.**\
-    **![](./media/image3.png){width="7.0in"
-    height="3.2291666666666665in"}
+    **![](./media0/image3.png)
 
 4.  In the **Choose Instance Type** tab, select the **t2.medium**
     instance size and click **Next: Configure Instance Details**
 
-![](./media/image4.png){width="7.0in" height="3.314583333333333in"}
+![](./media0/image4.png)
 
 5.  On the **Configure Instance Details** page, expand the **Advanced
     Details** section, copy/paste the script at
@@ -66,7 +64,7 @@ the IIS web server installed upon boot.
     into the User Data field (this PowerShell script will install/start
     IIS and deploy a simple web page) and click **Next: Add Storage**:
 
-> ![](./media/image5.png){width="7.0in" height="3.338888888888889in"}
+> ![](./media0/image5.png)
 >
 > For further information on User Data please refer to the documentation
 > at -
@@ -85,7 +83,7 @@ the IIS web server installed upon boot.
 > \
 > Then click **Next: Configure Security Group**.
 >
-> ![](./media/image6.png){width="7.0in" height="2.0805555555555557in"}\
+> ![](./media0/image6.png)\
 > For further information on Tags please refer to the documentation at -
 > <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html>.
 
@@ -95,7 +93,7 @@ the IIS web server installed upon boot.
     "\[Your Name\] Web Server", and open ports 3389 and 80. Click the
     **Review and Launch** button after configuring the security group.\
     \
-    ![](./media/image7.png){width="7.0in" height="3.359722222222222in"}
+    ![](./media0/image7.png)
 
 7.  Review your choices, and then click **Launch**. *Note the two
     warning boxes at the top of the page, these are to warn you about
@@ -103,8 +101,7 @@ the IIS web server installed upon boot.
     server that has RDP access that is "open to the world" this is
     something that you wouldn't normally do.*
 
-> ![](./media/image8.png){width="7.0in" height="3.379166666666667in"}
-
+> ![](./media0/image8.png)
 8.  Now you need to create a public/private keypair. When this instance
     launches, you will connect to it via Remote Desktop using the
     credentials for "administrator". For Windows instances, EC2
@@ -112,14 +109,12 @@ the IIS web server installed upon boot.
     key. To decrypt the encrypted password, you will use your private
     key. Let's create a new public/private keypair.
 
-![](./media/image9.png){width="4.129861111111111in"
-height="2.957638888888889in"}
+![](./media0/image9.png)
 
 9.  Enter a name for the key pair using the following format:
     \[YourName\]-KeyPair and click **Download Key Pair**.
 
-![](./media/image10.png){width="4.403472222222222in"
-height="2.702777777777778in"}
+![](./media0/image10.png)
 
 10. Your browser will download the private portion of the key pair to
     your PC. It will have a name like *JohnDoe-KeyPair.pem*. Note the
@@ -135,7 +130,7 @@ height="2.702777777777778in"}
     well as the Availability Zone the instance is in and its publicly
     routable DNS name.
 
-> ![](./media/image11.png){width="7.0in" height="3.4034722222222222in"}
+> ![](./media0/image11.png)
 
 Browse the Web Server
 =====================
@@ -147,14 +142,13 @@ section during creation of the instance.
 1.  Wait for the instance to pass the Status Checks. For Windows
     instances, this could take up to 20 minutes.
 
-> ![](./media/image12.png){width="7.0in" height="0.5916666666666667in"}
+> ![](./media0/image12.png)
 
 When complete, you will see the Status Checks have passed.
 
-> ![](./media/image13.png){width="7.0in" height="0.5826388888888889in"}
+> ![](./media0/image13.png)
 
-2.  ![](./media/image14.png){width="7.0in"
-    height="2.1881944444444446in"}Open a new browser tab and browse the
+2.  ![](./media0/image14.png)Open a new browser tab and browse the
     Web Server by entering the EC2 instance's Public DNS name into the
     browser. The EC2 instance's Public DNS name can be found in the
     console by reviewing the "Public DNS" column. You should see a page
@@ -174,20 +168,19 @@ Desktop](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt
 1.  Retrieve the automatically generated, encrypted Windows password by
     right clicking your instance and selecting **Get Windows Password**.
 
-> ![](./media/image15.png){width="7.0in" height="2.3243055555555556in"}
+> ![](./media0/image15.png)
 
 2.  On the next screen, click the Choose File button and select the
     private key file that was automatically downloaded earlier when you
     launched the instance. Then click **Decrypt Password** to obtain the
     Administrator password.
 
-![](./media/image16.png){width="5.3625in" height="3.2569444444444446in"}
+![](./media0/image16.png)
 
 3.  The decrypted Administrator password should look something like
     this:
 
-    ![](./media/image17.png){width="4.81875in"
-    height="3.2555555555555555in"}
+    ![](./media0/image17.png)
 
 > Note that since only you have the private key, it's important to
 > understand the automatically generated password can only be decrypted
@@ -201,7 +194,7 @@ Desktop](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt
     For example, in the web console, you'll see hostname listed as the
     **Public DNS** of the instance.
 
-> ![](./media/image18.png){width="7.0in" height="1.5361111111111112in"}
+> ![](./media0/image18.png)
 
 5.  In your RDP application, use **Administrator** as the username along
     with the decrypted password. Once connected, you will have access to
@@ -226,13 +219,12 @@ following steps outline how easy it is to do in AWS.
     and hover over **Instance State** and select **Stop** (NOT
     Terminate). Then select **Yes, Stop** to confirm.
 
-![](./media/image19.png){width="6.05625in"
-height="1.7902777777777779in"}
+![](./media0/image19.png)
 
 2.  After it has stopped, right-click on it again, hover over **Instance
     Settings** and select **Change Instance Type**.
 
-![](./media/image20.png){width="6.05625in" height="2.020138888888889in"}
+![](./media0/image20.png)
 
 After going through the options and selecting your new instance type, right-click your lab instance and select Start.
 ---------------------------------------------------------------------------------------------------------------------
@@ -276,7 +268,7 @@ Assign an EIP to your Web Server as follows:
 
 > **Two Important Notes:**
 
-1.  ![](./media/image21.emf){width="1.0in" height="1.0in"}As long as an
+1.  ![](./media0/image21.emf)As long as an
     > Elastic IP address is associated with a running instance, there is
     > no charge for it. However, an address that is not associated with
     > a running instance costs \$0.01/hour. This prevents address
