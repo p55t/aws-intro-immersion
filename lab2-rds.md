@@ -1,7 +1,4 @@
-![](./media/image1.png){width="1.0625054680664916in"
-height="0.637503280839895in"}
-
-  {#section .TOCHeading}
+![](./media2/image1.png)
 
 Overview
 ========
@@ -11,7 +8,7 @@ scale a relational database in the cloud. It provides cost-efficient and
 resizable capacity while managing time-consuming database administration
 tasks, freeing you up to focus on your applications and business.
 
-> ![](./media/image2.emf){width="1.0in" height="1.0in"}This lab has a
+> ![](./media2/image2.emf) This lab has a
 > prerequisite of *Immersion Day -- Getting Started with EC2* in order
 > to complete. This part of the lab will demonstrate configuring a
 > previously created web server in the *Immersion Day -- Getting Started
@@ -40,14 +37,13 @@ DB Tier." Write a short description, and keep the VPC setting to the
 same VPC you've launched your EC2 instance in. Then click **Yes,
 Create**.
 
-![](./media/image3.png){width="6.8125in" height="2.8541666666666665in"}
+![](./media2/image3.png)
 
 After your VPC security group is created, you'll see the details of it
 in the lower pane on the screen. Click **Inbound Rules***,* then the
 **Edit** button.
 
-![](./media/image4.png){width="6.135416666666667in"
-height="2.0208333333333335in"}
+![](./media2/image4.png)
 
 Add a new inbound rule for the EC2 server(s) in our web tier. The *type*
 should be **MySQL/Aurora (3306)**, the *protocol* **TCP (6),** and in
@@ -56,7 +52,7 @@ instance belongs. While you're typing, a list of security group(s) that
 match that name should be presented to you. Select your security group,
 then click the **Save** button.
 
-![](./media/image5.png){width="7.0in" height="1.9152777777777779in"}
+![](./media2/image5.png)
 ====================================================================
 
 Launch an RDS Instance
@@ -70,14 +66,12 @@ MySQL RDS Instance.
 
 2.  Click on **Create database** or **Get Started Now**
 
-> ![](./media/image6.png){width="6.7251804461942255in"
-> height="3.1531977252843393in"}
+> ![](./media2/image6.png)
 
 3.  We will be using a MySQL database, so choose MySQL from the
     available engines.
 
-> ![](./media/image7.png){width="5.4104822834645665in"
-> height="3.0381944444444446in"}**\
+> ![](./media2/image7.png)**\
 > **
 
 4.  Check **Only enable options eligible for RDS Free Usage Tier**, at
@@ -86,8 +80,7 @@ MySQL RDS Instance.
     options such as Multi-AZ deployments or read replicas, but it is OK
     for the purposes of this lab.)
 
-> ![](./media/image8.png){width="5.185184820647419in"
-> height="0.6527668416447944in"}
+> ![](./media2/image8.png)
 
 5.  Fill out the DB Instance details with the following information and
     click **Next:**
@@ -107,11 +100,9 @@ MySQL RDS Instance.
 
 -   Master Password: awspassword
 
-![](./media/image9.png){width="5.833333333333333in"
-height="5.61838145231846in"}
+![](./media2/image9.png)
 
-![](./media/image10.png){width="5.838891076115486in"
-height="3.530492125984252in"}
+![](./media2/image10.png)
 
 6.  In **Configure Advanced Settings,** fill out *Network & Security*
     with the following information:
@@ -127,8 +118,7 @@ height="3.530492125984252in"}
 -   VPC Security Group(s): Select *Choose existing VPC security groups*,
     then pick \[Initials\] -- Immersion Day DB Tier
 
-> ![](./media/image11.png){width="5.276696194225722in"
-> height="4.649830489938758in"}
+> ![](./media2/image11.png)
 
 7.  Under *Database Options*, enter a DB name called "immersionday" and
     accept the defaults for *database port, parameter group, option
@@ -136,12 +126,11 @@ height="3.530492125984252in"}
     the rest of the configuration groups (*Encryption, Backup,
     Monitoring, Log exports* and *Maintenance*).
 
-![](./media/image12.png){width="5.240242782152231in"
-height="3.6356714785651794in"}
+![](./media2/image12.png)
 
 -   Review your settings and click **Create database**.
 
--   ![](./media/image2.emf){width="1.0in" height="1.0in"}In the RDS
+-   ![](./media2/image2.emf)In the RDS
     Dashboard, monitor your new DB instance until the status changes
     from "creating" to "backing up" to "available".
 
@@ -161,14 +150,12 @@ get the URL for your database endpoint.
 1.  In the RDS console, click on **Instances** and then select your
     database instance, *awsdb*.
 
-![](./media/image13.png){width="5.6180807086614175in"
-height="2.635880358705162in"}
+![](./media2/image13.png)
 
 2.  Scroll down to the *Connect* section and check the value under
     *Endpoint*. Remember this because you will need it in a minute.
 
-    ![](./media/image14.png){width="3.8484273840769903in"
-    height="3.4930555555555554in"}
+    ![](./media2/image14.png)
 
 3.  Navigate to the browser tab connected to web application you
     launched previously in the *Immersion Day -- Getting Started with
@@ -178,12 +165,11 @@ height="2.635880358705162in"}
     username (*awsuser*), password (*awspassword*) and database
     (*immersionday*) information you just created. Click the **Submit**
     button.\
-    ![](./media/image15.png){width="6.259339457567804in"
-    height="2.3055555555555554in"}
+    ![](./media2/image15.png)
 
 4.  When complete, you will be redirected to a simple page displaying
     all of the information from the database you just created.\
-    ![](./media/image16.png){width="6.5in" height="2.5125in"}\
+    ![](./media2/image16.png)\
     This is a very basic example of a simple address book interacting
     with a MySQL database managed by AWS. RDS can support much more
     complicated relational database scenarios, but we hope this simple
@@ -210,13 +196,12 @@ time. 
 In the RDS section of the of the AWS management console, select your RDS
 instance, click on **Instance actions** and select **Take snapshot**:
 
-![](./media/image17.png){width="7.0in" height="2.024563648293963in"}
+![](./media2/image17.png)
 
 The next screen will ask you for a name. Enter **mysnapshot** and click
 **Take snapshot**.
 
-![](./media/image18.png){width="5.669853455818023in"
-height="2.3055555555555554in"}
+![](./media2/image18.png)
 
 Note: Using single-instance RDS, you will incur downtime for as long as
 it takes to make a backup. Of course our example database is so small
@@ -226,7 +211,7 @@ DB snapshots show up under the **Snapshots** link on the left side of
 the screen. Notice that you can easily launch new RDS instances from any
 previous snapshot!
 
-![](./media/image19.png){width="7.0in" height="1.7773764216972878in"}
+![](./media2/image19.png)
 
 Modify RDS Instance Size
 ------------------------
@@ -238,8 +223,7 @@ AWS Console.
 Select your RDS DB instance, click **Instance actions** and then
 **Modify**.
 
-![](./media/image20.png){width="6.010416666666667in"
-height="2.174821741032371in"}
+![](./media2/image20.png)
 
 Try changing to a Large instance, and if you want, also grow the
 database at the same time. Click **Next**.
@@ -247,7 +231,7 @@ database at the same time. Click **Next**.
 In the next screen, don't forget to click **"Apply Immediately"** --
 otherwise changes will be queued for the next maintenance window.
 
-> ![](./media/image2.emf){width="1.0in" height="1.0in"}**Tip**: You can
+> ![](./media2/image2.emf)**Tip**: You can
 > change instance sizes up or down at any time. However you cannot
 > shrink a database once you grow it.
 >
@@ -255,8 +239,6 @@ otherwise changes will be queued for the next maintenance window.
 > operations. In general, major RDS reconfigurations such as scaling
 > database sizes or machine size take between 4 and 12 minutes.
 >
-> ![](./media/image21.png){width="3.898148512685914in"
-> height="3.3622845581802276in"}
+> ![](./media2/image21.png)
 
-![](./media/image22.png){width="6.6642639982502185in"
-height="1.8888888888888888in"}
+![](./media2/image22.png)
