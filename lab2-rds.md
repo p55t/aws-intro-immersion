@@ -140,13 +140,10 @@ MySQL RDS Instance.
 > ![](./media2/image11.png)**\
 > **
 
-16. Check **Only enable options eligible for RDS Free Usage Tier**, at
-    the bottom of the page, and then click **Next**. (Note: this is not
+16. Under Templates, Select **Free Tier** (Note: this is not
     recommended for production databases, as this option will disable
     options such as Multi-AZ deployments or read replicas, but it is OK
     for the purposes of this lab.)
-
-> ![](./media2/image12.png)
 
 17. Fill out the DB Instance details with the following information and
     click **Next:**
