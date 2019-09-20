@@ -114,7 +114,7 @@ in the lower pane on the screen. Click **Inbound Rules***,* then the
 Add a new inbound rule for the EC2 server(s) in our web tier. The *type*
 should be **MySQL/Aurora (3306)**, the *protocol* **TCP (6),** and in
 the *source* box, type the name of the security group to which your EC2
-instance belongs. While you're typing, a list of security group(s) that
+instance belongs (***your initial - Web Tier***). While you're typing, a list of security group(s) that
 match that name should be presented to you. Select your security group,
 then click the **Save** button.
 
