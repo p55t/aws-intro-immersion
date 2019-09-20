@@ -23,15 +23,15 @@ menu. [ ]{.underline}
 ![](./media2/image2.png)
 ---------------------------------------------------------
 
-1.  In the **Quick Start** section, select the first Amazon Linux 2 AMI
+2.  In the **Quick Start** section, select the first Amazon Linux 2 AMI
     and click **Select.**
 
     ![](./media2/image3.png)
     
-2.  In the Choose Instance Type tab, select the t2.micro instance size
+3.  In the Choose Instance Type tab, select the t2.micro instance size
     and click **Next**.
 
-3.  On the **Configure Instance Details** page, expand the **Advanced
+4.  On the **Configure Instance Details** page, expand the **Advanced
     Details** section, copy/paste the script below into the **User
     Data** field (this shell script will install Apache & PHP, start the
     web service, and deploy a simple web page). Click **Next.**
@@ -42,45 +42,45 @@ menu. [ ]{.underline}
 | https://s3.amazonaws.com/immersionday-labs/bootstrap.sh |
 +---------------------------------------------------------+
 
-4.  On this page you have the ability to modify or add storage and disk
+5.  On this page you have the ability to modify or add storage and disk
     drives to the instance. For this lab, we will simply accept the
     storage defaults and click **Next.**
 
-5.  Here, we choose a "friendly name" for your instance by choosing
+6.  Here, we choose a "friendly name" for your instance by choosing
     'click to add a Name tag'. This name, more correctly known as a
     **tag**, will appear in the console once the instance launches. It
     makes it easy to keep track of running machines in a complex
     environment. Name yours as: "\[Your Name\] Web Server", and then
     click **Next**.
 
-6.  You will be prompted to create a new security group, which will be
+7.  You will be prompted to create a new security group, which will be
     your firewall rules. On the assumption that we are building out a
     Web server, name your new security group "\[Your Name\] Web Tier",
     and confirm an existing SSH rule exists which allows TCP port 22
     from Anywhere. Click **Add Rule.**:
 
-7.  Select HTTP from the 'Type' dropdown menu, and confirm TCP port 80
+8.  Select HTTP from the 'Type' dropdown menu, and confirm TCP port 80
     is allowed from Anywhere *(you'll notice, that "Anywhere is the same
     as '0.0.0.0/0')*. Click **Add Rule**.
 
     ![](./media2/image5.png)
 
-8.  Click the **Review and Launch** button after configuring the
+9.  Click the **Review and Launch** button after configuring the
     security group.
 
-9.  Review your cofiguration and choices, and then click **Launch**.
+10.  Review your cofiguration and choices, and then click **Launch**.
 
-10. Select the key pair that you created in the beginning of this lab
+11. Select the key pair that you created in the beginning of this lab
     from the drop-down and check the \"I acknowledge\" checkbox. Then
     click the **Launch Instances** button.
 
-11. Click the **View Instances** button in the lower righthand portion
+12. Click the **View Instances** button in the lower righthand portion
     of the screen to view the list of EC2 instances. Once your instance
     has launched, you will see your Web Server as well as the
     Availability Zone the instance is in, and the publicly routable DNS
     name.
 
-12. Click the checkbox next to your web server to view details about
+13. Click the checkbox next to your web server to view details about
     this EC2 instance.
 
 ![Macintosh
