@@ -1,4 +1,4 @@
-![](./media2/image1.png)
+![](./media0/image1.jpg)
 
 Overview
 ========
