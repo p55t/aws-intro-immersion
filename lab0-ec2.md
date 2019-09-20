@@ -1,25 +1,7 @@
 ![Image result for aws
 logo](./media0/image1.jpeg)
 
-Table of Contents {#table-of-contents .TOCHeading}
-=================
-
-Overview 3
-
-Launch a Web Server Instance 4
-
-Browse the Web Server 12
-
-Connecting To Your Windows Instance 13
-
-Appendix -- Additional EC2 Concepts 16
-
-Change the Instance Type 16
-
-Black Belt Booting 18
-
-**\
-**
+# Lab 0 ELastic Compute Cloud (EC2) Hands-on Lab
 
 Overview
 ========
