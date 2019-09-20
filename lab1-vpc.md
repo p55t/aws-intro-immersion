@@ -1,7 +1,7 @@
 ![Image result for aws
 logo](./media1/image1.jpeg)
 
-# Lab 1 VPC Hands-On Lab
+# Lab 1: VPC Hands-On Lab
 
 Virtual Private Cloud (VPC) Overview
 ====================================
