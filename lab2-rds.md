@@ -71,8 +71,8 @@ menu.
 
 10.  Review your cofiguration and choices, and then click **Launch**.
 
-11. Select the key pair that you created in the beginning of this lab
-    from the drop-down and check the \"I acknowledge\" checkbox. Then
+11. Select the key pair that you created
+    from the drop-down (or create a new one) and check the \"I acknowledge\" checkbox. Then
     click the **Launch Instances** button.
 
 12. Click the **View Instances** button in the lower righthand portion
