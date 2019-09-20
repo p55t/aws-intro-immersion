@@ -1,7 +1,7 @@
 ![Image result for aws
 logo](./media0/image1.jpeg)
 
-# Lab 0 ELastic Compute Cloud (EC2) Hands-on Lab
+# Lab 0: Eastic Compute Cloud (EC2) Hands-on Lab
 
 Overview
 ========
