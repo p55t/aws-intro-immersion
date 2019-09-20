@@ -1,6 +1,5 @@
 ![Image result for aws
-logo](./media/image1.jpeg){width="1.629630358705162in"
-height="1.2270581802274716in"}
+logo](./media1/image1.jpeg)
 
 Immersion Day
 
@@ -30,7 +29,7 @@ Navigate to the VPC Dashboard
 
 To get started, let's take a look at the VPC Dashboard.
 
-![](./media/image2.png){width="7.0in" height="1.4409722222222223in"}
+![](./media1/image2.png)
 
 In every region, a **default VPC** has already been created for you. So,
 even if you haven't created anything in your account yet, you will see
@@ -49,8 +48,7 @@ Elastic IPs are required for NAT Gateways.
 To create one, go to **Elastic IPs** in the sidebar, and press
 **Allocate new address**, **Allocate**, **Close.**
 
-![](./media/image4.png){width="6.316831802274716in"
-height="2.5053554243219596in"}
+![](./media1/image4.png)
 
 Now click on **VPC Dashboard** in the top left corner to go back to the
 main VPC page.
@@ -58,7 +56,7 @@ main VPC page.
 Click on **Launch VPC Wizard** to start the VPC Wizard and select '**VPC
 with Public and Private Subnets'**.
 
-![](./media/image5.png){width="7.0in" height="2.6777777777777776in"}
+![](./media1/image5.png)
 
 This option will create a VPC with a /16 CIDR block and two subnets with
 /24 CIDR blocks which have 256 total IP addresses each. In each subnet,
@@ -68,8 +66,7 @@ addresses per subnet. Fill in the **VPC name** (I called my VPC
 drop-down. For this lab, we will leave the rest of the default
 configuration as is.
 
-![](./media/image6.png){width="4.319444444444445in"
-height="4.458332239720035in"}
+![](./media1/image6.png)
 
 This Elastic IP will be used to create a **Network Address Translation
 (NAT) gateway** for the private subnet. NAT gateway is a managed, highly
@@ -101,16 +98,14 @@ Route Table** for your VPC. Any subnets in the VPC that do not have a
 route table directly associated with it will use this route table by
 default. To explore this further, click on the **Route table link**.
 
-![](./media/image7.png){width="5.67036854768154in"
-height="2.8415846456692915in"}
+![](./media1/image7.png)
 
 You are now in the **Route Tables** dashboard, filtered on the main
 route table of the VPC you just created. That means that there should be
 only one route table shown. Select this route table and click on the
 **Subnet Associations** tab.
 
-![](./media/image8.png){width="4.1188123359580056in"
-height="2.795731627296588in"}
+![](./media1/image8.png)
 
 You can see that there are no **explicit subnet associations** on this
 route table. However, since this is the main route table for the VPC,
@@ -143,8 +138,7 @@ IGWs are another managed and scalable service like the NAT Gateway
 except that it allows access from the internet to your resources in the
 VPC, making your resources publicly accessible.
 
-![](./media/image9.png){width="4.640349956255468in"
-height="3.0891087051618547in"}
+![](./media1/image9.png)
 
 There is a reason why this route table is not the main route table. It
 is best practice for your VPC's main route table to not have a route to
@@ -168,8 +162,7 @@ match any rules, the \* rule is applied, and the traffic is denied.
 Default NACLs allow all inbound and outbound traffic, as shown below,
 unless customized.
 
-![](./media/image10.png){width="5.315849737532808in"
-height="4.423678915135608in"}
+![](./media1/image10.png)
 
 Allowing all traffic in and out of your subnets is not a good security
 posture. However, it is possible to achieve good security with this
@@ -199,9 +192,8 @@ corner and go to the **EC2 dashboard**.
 1.  Select Launch Instance, and then in the **Quick Start** section
     select the first Amazon Linux 2 AMI and click **Select.**
 
-    ![](./media/image11.png){width="7.099010279965005in"
-    height="1.2845439632545932in"}
-
+    ![](./media1/image11.png)
+    
 2.  In the Choose Instance Type tab, select the t2.micro instance size
     and click **Next**.
 
@@ -210,8 +202,7 @@ corner and go to the **EC2 dashboard**.
     created and change the **Subnet** field to the **Public subnet**.
     Leave the other default settings as is. Click **Next**.
 
-![](./media/image12.png){width="6.486111111111111in"
-height="2.4305555555555554in"}
+![](./media1/image12.png)
 
 4.  For this lab, you can accept the default values in the remaining
     steps, so finish creating this instance by clicking on **Review and
@@ -246,8 +237,7 @@ addresses and DNS records associated with the instance. However, you can
 see that this instance doesn't have a public IP or DNS yet. We will need
 at least one of these to ping this instance via the internet.
 
-![](./media/image13.png){width="6.833333333333333in"
-height="3.0277777777777777in"}
+![](./media1/image13.png)
 
 To fix this, we are going to attach an **Elastic IP** to the EC2
 instance. First, copy the **Instance ID** of this EC2 instance by
@@ -261,8 +251,7 @@ time, **do not** click on the **Close** button. Instead, you will:
 **Allocate new address, Allocate**, and then click on the **Elastic IP**
 link in the **New address request succeeded** box.
 
-![](./media/image14.png){width="3.9166666666666665in"
-height="1.3472222222222223in"}
+![](./media1/image14.png)
 
 Now you are back on the **Elastic IPs** dashboard. Go to the **Actions**
 dropdown and select **Associate address**. Paste the Instance ID that
@@ -276,8 +265,7 @@ route to an IGW.
 
 In the **Description** tab, copy the Elastic IP address.
 
-![](./media/image15.png){width="4.91812554680665in"
-height="1.2178215223097113in"}
+![](./media1/image15.png)
 
 To ping the instance, you need to open your CLI. On Windows, open the
 **Command Prompt**. On Mac, open the **Terminal**. Type **ping,** then a
@@ -309,8 +297,7 @@ sidebar. Select the instance that you created and look at the
 groups** link. It should be called something similar to
 **launch-wizard-1**.
 
-![](./media/image16.png){width="3.861111111111111in"
-height="2.8472222222222223in"}
+![](./media1/image16.png)
 
 You are now in the **Security Groups** dashboard. Go to the **Inbound**
 tab.
@@ -324,8 +311,7 @@ Pings use **ICMP**, so we will need to change the security group rule to
 allow ICMP traffic rather than SSH traffic. Click on the **Edit**
 button.
 
-![](./media/image17.png){width="5.527777777777778in"
-height="2.8333333333333335in"}
+![](./media1/image17.png)
 
 Click on **SSH** to open the drop-down and change it to **All** **ICMP -
 IPv4**. Click **Save**.
@@ -338,8 +324,7 @@ effect immediately, so we can try to ping the instance again right away.
 Go back to your CLI and hit the **up arrow** and then **enter** to try
 and ping the instance again.
 
-![](./media/image18.png){width="3.754051837270341in"
-height="2.069306649168854in"}
+![](./media1/image18.png)
 
 **Good job! You have successfully troubleshooted why an EC2 instance was
 unreachable and then accessed it over the internet.**
