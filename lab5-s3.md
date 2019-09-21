@@ -49,22 +49,18 @@ in and out of the bucket.*
     organisation\'s name.  
 
 >Bucket names must comply with the following requirements.
-
 >Bucket names:
 
 >-   Can contain lowercase letters, numbers, periods (.) and dashes (-)
-
 >-   Must start with a number or letter
-
 >-   Must be between 3 and 255 characters long
-
 >-   Must not be formatted as an IP address (e.g., 265.255.5.4)
 
-***Note:** There might be additional restrictions on bucket names based
-on the region your bucket is in or how you intend to access the object.
-Once you create a bucket, you cannot change its name. In addition, the
-bucket name is visible in the URL that points to the objects stored in
-the bucket. Make sure the bucket name you choose is appropriate.*
+>***Note:** There might be additional restrictions on bucket names based
+>on the region your bucket is in or how you intend to access the object.
+>Once you create a bucket, you cannot change its name. In addition, the
+>bucket name is visible in the URL that points to the objects stored in
+>the bucket. Make sure the bucket name you choose is appropriate.*
 
 4.  In the **Region** drop-down list box, select a region. Click
     **Next**.
