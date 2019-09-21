@@ -1,7 +1,7 @@
 ![Image result for aws
 logo](./media5/image1.jpeg)
 
-### Lab 6: Simple Storage Service (S3) Hands-On Lab
+# Lab 6: Simple Storage Service (S3) Hands-On Lab
 
 Amazon S3 Overview
 ==================
@@ -137,12 +137,12 @@ in a browser.
 1.  In the Amazon S3 console, click the on the name of the object you
     want to open.
 
-***Note:** By default, your Amazon S3 buckets and objects are private.
-To view an object using a URL, for example,
-https://s3.amazonaws.com/Bucket/Object the object must be publicly
-readable. Otherwise, you will need to create signed URL that includes a
-signature with authentication information. You can optionally save the
-object locally.*
+>***Note:** By default, your Amazon S3 buckets and objects are private.
+>To view an object using a URL, for example,
+>https://s3.amazonaws.com/Bucket/Object the object must be publicly
+>readable. Otherwise, you will need to create signed URL that includes a
+>signature with authentication information. You can optionally save the
+>object locally.*
 
 2.  Click on the **Permissions**. **Uncheck** the block all public
     access
