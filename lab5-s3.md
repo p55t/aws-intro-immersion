@@ -1,5 +1,5 @@
 ![Image result for aws
-logo](./media/image1.jpeg){width="1.629630358705162in"
+logo](./media5/image1.jpeg){width="1.629630358705162in"
 height="1.2270581802274716in"}
 
 S3 Hands-On Lab
@@ -46,7 +46,7 @@ in and out of the bucket.*
 
 2.  Click **Create Bucket**. The **Create a Bucket** dialog box appears.
 
-![](./media/image2.png){width="7.1in" height="3.4694444444444446in"}
+![](./media5/image2.png){width="7.1in" height="3.4694444444444446in"}
 
 1.  Enter a bucket name in the **Bucket Name** field. The bucket name
     you choose must be unique across all existing bucket names in Amazon
@@ -81,12 +81,12 @@ the bucket. Make sure the bucket name you choose is appropriate.*
 
 5.  Have a good look at the other options, but leave them as default for
     this lab. Click
-    **Next**.![](./media/image3.png){width="4.510694444444445in"
+    **Next**.![](./media5/image3.png){width="4.510694444444445in"
     height="4.277227690288714in"}
 
 6.  Under set permissions. We will block public access to the bucket
 
-    ![](./media/image4.png){width="7.1in" height="3.4916666666666667in"}
+    ![](./media5/image4.png){width="7.1in" height="3.4916666666666667in"}
 
 7.  Click on next
 
@@ -94,7 +94,7 @@ the bucket. Make sure the bucket name you choose is appropriate.*
     Amazon S3 successfully creates your bucket, the console displays
     your empty bucket in the **Buckets** panel.
 
-![](./media/image5.png){width="6.297029746281715in"
+![](./media5/image5.png){width="6.297029746281715in"
 height="1.8243153980752407in"}
 
 **Well done - you\'ve created your first bucket in Amazon S3!**
@@ -117,7 +117,7 @@ access to the file.
 2.  Click **Add Files** to select a file to upload. A file selection
     dialog box opens.
 
-> ![](./media/image6.png){width="4.861701662292213in"
+> ![](./media5/image6.png){width="4.861701662292213in"
 > height="2.3866272965879265in"}
 
 3.  Select a small file to upload and click **Open**. The **Upload**
@@ -125,14 +125,14 @@ access to the file.
 
 4.  Use the default permissions
 
-> ![](./media/image7.png){width="5.488191163604549in"
+> ![](./media5/image7.png){width="5.488191163604549in"
 > height="2.691489501312336in"}
 
 5.  For the purpose of this lab we will be using the standard tiering
     option. Depending on your use case you can choose other tiering
     options
 
-    ![](./media/image8.png){width="5.540299650043744in"
+    ![](./media5/image8.png){width="5.540299650043744in"
     height="2.7446806649168853in"}
 
 <!-- -->
@@ -161,24 +161,24 @@ object locally.*
 2.  Click on the **Permissions**. **Uncheck** the block all public
     access
 
-    ![](./media/image9.png){width="5.904255249343832in"
+    ![](./media5/image9.png){width="5.904255249343832in"
     height="2.346918197725284in"}
 
 3.  Type in **confirm**
 
-    ![](./media/image10.png){width="4.797871828521435in"
+    ![](./media5/image10.png){width="4.797871828521435in"
     height="2.5650601487314084in"}
 
 4.  Click on overview. Navigate to the object in your bucket. Click on
     permissions
 
-    ![](./media/image11.png){width="5.276595581802274in"
+    ![](./media5/image11.png){width="5.276595581802274in"
     height="2.2367727471566052in"}
 
 5.  Scroll down and click on **Everyone** and **check** read object. You
     should see the following message pop up
 
-    ![](./media/image12.png){width="6.287233158355206in"
+    ![](./media5/image12.png){width="6.287233158355206in"
     height="2.410598206474191in"}
 
 6.  Click on the **Overview** tab, and then click on the link to your
@@ -224,7 +224,7 @@ to retain the old version, you can turn on bucket versioning.
 1.  In the S3 Console, click on the link representing the bucket you
     created, and then select the **Properties** tab.
 
-![](./media/image13.png){width="5.485148731408574in"
+![](./media5/image13.png){width="5.485148731408574in"
 height="2.639727690288714in"}
 
 2.  Click on the **Versioning** tile, select the **Enable versioning**
@@ -242,7 +242,7 @@ height="2.639727690288714in"}
 6.  Now click on the object's link in the S3 bucket and click on the
     words **Latest version** (to the right of the object's name).
 
-![](./media/image14.png){width="5.303144138232721in"
+![](./media5/image14.png){width="5.303144138232721in"
 height="1.6831681977252844in"}
 
 This shows the different versions of the object in the bucket. You can
