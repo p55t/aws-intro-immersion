@@ -69,7 +69,8 @@ eliminate over-provisioning of capacity during times when it is not
 needed. Auto Scaling can also find an unhealthy instance, terminate
 that instance, and launch a new one based on the scaling plan
 
-## Getting Started
+Getting Started
+===============
 
 This lab will walk you through the process of building out these
 components. For the purposes of this lab, you will be using the AWS
