@@ -57,8 +57,6 @@ instance.
     first instance, this newly launched instance will take a few minutes
     to boot and configure itself.
 
-    ![](./media3/image7.png)
-
 6.  Please select the existing key pair that you created and click
     Launch Instances.
 
