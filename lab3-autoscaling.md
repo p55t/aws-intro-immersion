@@ -31,16 +31,14 @@ responds to the metrics you define when creating these groups.
 
 There are multiple components of Auto Scaling on AWS. They are:
 
-Groups: 
-========
+### Groups: 
 
 > Your EC2 instances are organized into *groups* so that they can be
 > treated as a logical unit for the purposes of scaling and management.
 > When you create a group, you can specify its minimum, maximum, and
 > desired number of EC2 instances. 
 
-Launch Template:
-================
+### Launch Template:
 
 > A Launch Template is a capability of EC2 Auto Scaling that allows a
 > way to templatize your launch requests. It enables you to store launch
@@ -58,21 +56,20 @@ Launch Template:
 > launching one type of instance, or a combination of instance types and
 > purchase options.
 
-3.  Scaling Policies:
-    =================
+### Scaling Policies:
 
-    A Scaling Policy tells Auto Scaling when and how to scale. Scaling
-    can occur manually, on a schedule, on demand or you can use Auto
-    Scaling to maintain a specific number of instances.
+> A Scaling Policy tells Auto Scaling when and how to scale. Scaling
+> can occur manually, on a schedule, on demand or you can use Auto
+> Scaling to maintain a specific number of instances.
 
-    Auto Scaling is well suited for applications that have unpredictable
-    demand patterns that can experience hourly, daily, or weekly
-    variability in usage. This helps you to manage your cost and
-    eliminate over-provisioning of capacity during times when it is not
-    needed. Auto Scaling can also find an unhealthy instance, terminate
-    that instance, and launch a new one based on the scaling plan
+Auto Scaling is well suited for applications that have unpredictable
+demand patterns that can experience hourly, daily, or weekly
+variability in usage. This helps you to manage your cost and
+eliminate over-provisioning of capacity during times when it is not
+needed. Auto Scaling can also find an unhealthy instance, terminate
+that instance, and launch a new one based on the scaling plan
 
-Getting Started
+## Getting Started
 
 This lab will walk you through the process of building out these
 components. For the purposes of this lab, you will be using the AWS
