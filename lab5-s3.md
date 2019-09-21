@@ -1,12 +1,7 @@
 ![Image result for aws
-logo](./media5/image1.jpeg){width="1.629630358705162in"
-height="1.2270581802274716in"}
+logo](./media5/image1.jpeg)
 
-S3 Hands-On Lab
-
-Getting Started with Simple Storage Service
-
- 
+### Lab 6: Simple Storage Service (S3) Hands-On Lab
 
 Amazon S3 Overview
 ==================
@@ -46,9 +41,9 @@ in and out of the bucket.*
 
 2.  Click **Create Bucket**. The **Create a Bucket** dialog box appears.
 
-![](./media5/image2.png){width="7.1in" height="3.4694444444444446in"}
+    ![](./media5/image2.png)
 
-1.  Enter a bucket name in the **Bucket Name** field. The bucket name
+3.  Enter a bucket name in the **Bucket Name** field. The bucket name
     you choose must be unique across all existing bucket names in Amazon
     S3. One way to do that is to prefix your bucket names with your
     organisation\'s name.  
@@ -71,31 +66,29 @@ Once you create a bucket, you cannot change its name. In addition, the
 bucket name is visible in the URL that points to the objects stored in
 the bucket. Make sure the bucket name you choose is appropriate.*
 
-2.  In the **Region** drop-down list box, select a region. Click
+4.  In the **Region** drop-down list box, select a region. Click
     **Next**.
 
-3.  You also have the option of copying settings from an existing bucket
+5.  You also have the option of copying settings from an existing bucket
 
-4.  Under **Tags**, in the **Key** box, type **Purpose**, and in the
+6.  Under **Tags**, in the **Key** box, type **Purpose**, and in the
     **Value** box, enter **Immersion Day**.
 
-5.  Have a good look at the other options, but leave them as default for
+7.  Have a good look at the other options, but leave them as default for
     this lab. Click
-    **Next**.![](./media5/image3.png){width="4.510694444444445in"
-    height="4.277227690288714in"}
+    **Next**.![](./media5/image3.png)
 
-6.  Under set permissions. We will block public access to the bucket
+8.  Under set permissions. We will block public access to the bucket
 
-    ![](./media5/image4.png){width="7.1in" height="3.4916666666666667in"}
+    ![](./media5/image4.png)
 
-7.  Click on next
+9.  Click on next
 
-8.  Finally, review your settings and click **Create bucket**. When
+10.  Finally, review your settings and click **Create bucket**. When
     Amazon S3 successfully creates your bucket, the console displays
     your empty bucket in the **Buckets** panel.
 
-![](./media5/image5.png){width="6.297029746281715in"
-height="1.8243153980752407in"}
+    ![](./media5/image5.png)
 
 **Well done - you\'ve created your first bucket in Amazon S3!**
 
@@ -117,27 +110,24 @@ access to the file.
 2.  Click **Add Files** to select a file to upload. A file selection
     dialog box opens.
 
-> ![](./media5/image6.png){width="4.861701662292213in"
-> height="2.3866272965879265in"}
+    ![](./media5/image6.png)
 
 3.  Select a small file to upload and click **Open**. The **Upload**
     dialogue shows the files and folders you\'ve selected to upload.
 
 4.  Use the default permissions
 
-> ![](./media5/image7.png){width="5.488191163604549in"
-> height="2.691489501312336in"}
+    ![](./media5/image7.png)
 
 5.  For the purpose of this lab we will be using the standard tiering
     option. Depending on your use case you can choose other tiering
     options
 
-    ![](./media5/image8.png){width="5.540299650043744in"
-    height="2.7446806649168853in"}
+    ![](./media5/image8.png)
 
 <!-- -->
 
-1.  Click **Upload**. You can watch the progress of the upload at the
+6.  Click **Upload**. You can watch the progress of the upload at the
     bottom of the screen. This appears as soon as the upload begins.
 
 > **Good work - you\'ve added a file to your bucket!**
@@ -161,25 +151,21 @@ object locally.*
 2.  Click on the **Permissions**. **Uncheck** the block all public
     access
 
-    ![](./media5/image9.png){width="5.904255249343832in"
-    height="2.346918197725284in"}
+    ![](./media5/image9.png)
 
 3.  Type in **confirm**
 
-    ![](./media5/image10.png){width="4.797871828521435in"
-    height="2.5650601487314084in"}
+    ![](./media5/image10.png)
 
 4.  Click on overview. Navigate to the object in your bucket. Click on
     permissions
 
-    ![](./media5/image11.png){width="5.276595581802274in"
-    height="2.2367727471566052in"}
+    ![](./media5/image11.png)
 
 5.  Scroll down and click on **Everyone** and **check** read object. You
     should see the following message pop up
 
-    ![](./media5/image12.png){width="6.287233158355206in"
-    height="2.410598206474191in"}
+    ![](./media5/image12.png)
 
 6.  Click on the **Overview** tab, and then click on the link to your
     object at the bottom of the screen to view the file using your
@@ -224,8 +210,7 @@ to retain the old version, you can turn on bucket versioning.
 1.  In the S3 Console, click on the link representing the bucket you
     created, and then select the **Properties** tab.
 
-![](./media5/image13.png){width="5.485148731408574in"
-height="2.639727690288714in"}
+    ![](./media5/image13.png)
 
 2.  Click on the **Versioning** tile, select the **Enable versioning**
     radio button, and then click **Save**.
@@ -242,8 +227,7 @@ height="2.639727690288714in"}
 6.  Now click on the object's link in the S3 bucket and click on the
     words **Latest version** (to the right of the object's name).
 
-![](./media5/image14.png){width="5.303144138232721in"
-height="1.6831681977252844in"}
+    ![](./media5/image14.png)
 
 This shows the different versions of the object in the bucket. You can
 click on the **download** icon and view the different versions of the
@@ -259,14 +243,14 @@ If you no longer need to store the objects you uploaded and moved while
 going through this guide, you should delete them so you do not incur
 further charges on those objects.
 
-9.  **I**n the Amazon S3 console, click on the link representing the
+1.  **I**n the Amazon S3 console, click on the link representing the
     bucket containing the object(s) you want to delete. Then select the
     object(s).
 
-10. Click the **More** button, followed by **Delete**. To confirm the
+2. Click the **More** button, followed by **Delete**. To confirm the
     action in the **Delete objects** dialogue, click **Delete**.
 
-11. Navigate back to the S3 console and select the bucket icon of the
+3. Navigate back to the S3 console and select the bucket icon of the
     bucket you want to delete (not the link to its right), and at the
     top of the page, click **Delete bucket**. Confirm the deletion by
     typing its name verbatim at the **Delete bucket** prompt.
