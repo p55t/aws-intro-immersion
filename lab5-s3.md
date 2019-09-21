@@ -83,8 +83,8 @@ in and out of the bucket.*
 10.  Finally, review your settings and click **Create bucket**. When
     Amazon S3 successfully creates your bucket, the console displays
     your empty bucket in the **Buckets** panel.
-
-    ![](./media5/image5.png)
+    
+   ![](./media5/image5.png)
 
 **Well done - you\'ve created your first bucket in Amazon S3!**
 
