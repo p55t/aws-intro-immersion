@@ -1,5 +1,4 @@
-![C:\\Users\\jzhng\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\371B5781.tmp](./media3/image1.png){width="3.1972222222222224in"
-height="1.7090277777777778in"}
+(./media3/image1.png)
 
 Overview
 ========
