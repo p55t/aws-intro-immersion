@@ -5,9 +5,6 @@ logo](./media0/image1.jpeg)
 
 Overview
 ========
-
-Amazon EC2 Auto Scaling
-
 Amazon EC2 Auto Scaling helps you to maintain application availability
 by scaling your infrastructure as the need or demand arises. It helps
 support your application's workload by making sure you have the right
