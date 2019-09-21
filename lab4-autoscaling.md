@@ -1,7 +1,7 @@
 ![Image result for aws
 logo](./media0/image1.jpeg)
 
-# Lab 3: EC2 Auto Scaling Hands-on Lab
+# Lab 4: EC2 Auto Scaling Hands-on Lab
 
 Overview
 ========
