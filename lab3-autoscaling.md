@@ -40,7 +40,7 @@ There are multiple components of Auto Scaling on AWS. They are:
 
 ### Launch Template:
 
-> A Launch Template is a capability of EC2 Auto Scaling that allows a
+> A Launch Template is a capability of EC2 that allows a
 > way to templatize your launch requests. It enables you to store launch
 > parameters so that you do not have to specify them every time you
 > launch an instance. For example, a launch template can contain an
@@ -91,41 +91,26 @@ for an EC2 Auto Scaling Group.
 1.  Sign into the AWS Management Console and on the Services menu, click
     **EC2.**
 
-2.  In the left navigation pane, find AUTO SCALING and click **Auto
-    Scaling Groups.**
+2.  In the left navigation pane, find and click **Launch Templates**
 
-3.  Click **Create Auto Scaling group.**
+3.  Click **Create launch template**
 
-> The console explains that the first step is to define a Launch
-> Template and the second step is to create the Auto Scaling Group.
-
-4.  Click **Get Started** if prompted.
-
-5.  Select **Launch Template**, and then click **Create a new launch
-    template**.
-
-    a.  If you do not see the option to create a Launch Template at this
-        step, look for INSTANCES in the left navigation pane and select
-        **Launch Templates** to get started instead
-
-![](./media3/image2.png)
-
-6.  This takes you to the *Create launch template* page where you can
+4.  This takes you to the *Create launch template* page where you can
     define the following configurations for your launch template:
 
-    b.  **What would you like to do?** Create a new template
+    a.  **What would you like to do?** Create a new template
 
-    c.  **Launch template name:** scaling-template
+    b.  **Launch template name:** scaling-template
 
-    d.  **Template version description:** Launch template for my Auto
+    c.  **Template version description:** Launch template for my Auto
         Scaling lab!
 
-7.  Next, select an AMI ID by clicking the **Search for AMI** link to
+5.  Next, select an AMI ID by clicking the **Search for AMI** link to
     the right of this configuration field.
 
-    e.  For the AMI Catalog, select Quick Start
+    a.  For the AMI Catalog, select Quick Start
 
-    f.  For the AMI, select the **Amazon Linux AMI**.
+    b.  For the AMI, select the **Amazon Linux AMI**.
 
 > You are selecting an **Amazon Machine Image (AMI),** which provides
 > the information required to launch an instance. It is a template for
@@ -139,7 +124,7 @@ lab, you are going to launch an instance running *Amazon Linux*.
 
 ![](./media3/image3.png)
 
-8.  Next, select the instance type to be **t2.micro**.
+6.  Next, select the instance type to be **t2.micro**.
 
 > EC2 offers a wide selection of instance types that are optimized to
 > fit different use cases. For example, there are memory optimized,
@@ -149,11 +134,11 @@ lab, you are going to launch an instance running *Amazon Linux*.
 > Tier pricing, which includes 750 hours of Linux and Windows t2.micro
 > instances each month for one year.
 
-9.  Your configurations up to this point should look like this:
+7.  Your configurations up to this point should look like this:
 
 ![](./media3/image4.png)
 
-10. Now, you are going to create a security group. Open up the AWS
+8. Now, you are going to create a security group. Open up the AWS
     Management Console in a new tab and on the Services menu, click
     **EC2.**
 
@@ -163,11 +148,13 @@ lab, you are going to launch an instance running *Amazon Linux*.
 12. Click **Create Security** Group and enter the following
     configurations:
 
-    g.  **Security group name:** scaling-lab-sg
+    a. **Security group name:** scaling-lab-sg
 
-    h.  **Description:** Security group for my Auto Scaling lab!
+    b. **Description:** Security group for my Auto Scaling lab!
 
-    i.  Add an **Inbound rule** with Type HTTP
+    c. Add an **Inbound rule** with Type HTTP from anywhere
+    
+    d. Pick the default VPC
 
 > Your final configurations should look like this:
 
@@ -184,16 +171,16 @@ browser.
 14. Hit the refresh button next to Security Groups. Find and select the
     Security Group that you just created.
 
-15. Scroll down to Storage Volumes and select **Add new volume** and
-    configure:
+15. Scroll down to Storage Volumes and check that you have a storage
+    configure as below:
 
-    j.  **Device Name:** /dev/xvda
+    a.  **Device Name:** /dev/xvda
 
-    k.  **Size:** 8
+    b.  **Size:** 8
 
-    l.  **Volume type:** General Purpose
+    c.  **Volume type:** General Purpose
 
-    m.  **Delete on termination:** Yes
+    d.  **Delete on termination:** Yes
 
         In a production environment, you might want to add persistent
         block storage based on your requirements. You can specify an EBS
