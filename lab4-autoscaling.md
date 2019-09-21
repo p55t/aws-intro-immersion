@@ -122,7 +122,7 @@ for an EC2 Auto Scaling Group.
 AMIs are available for various versions of Windows and Linux. In this
 lab, you are going to launch an instance running *Amazon Linux*.
 
-![](./media3/image3.png)
+![](./media4/image3.png)
 
 6.  Next, select the instance type to be **t2.micro**.
 
@@ -136,7 +136,7 @@ lab, you are going to launch an instance running *Amazon Linux*.
 
 7.  Your configurations up to this point should look like this:
 
-![](./media3/image4.png)
+![](./media4/image4.png)
 
 8. Now, you are going to create a security group. Open up the AWS
     Management Console in a new tab and on the Services menu, click
@@ -158,7 +158,7 @@ lab, you are going to launch an instance running *Amazon Linux*.
 
 > Your final configurations should look like this:
 
-![](./media3/image5.png)
+![](./media4/image5.png)
 
 By creating this security group and adding it to your Launch Template,
 you are allowing inbound HTTP traffic on port 80 to the EC2 instances in
@@ -198,7 +198,7 @@ browser.
 
 17. Your configurations up to this point should look like this:
 
-![](./media3/image6.png)
+![](./media4/image6.png)
 
 18. Expand **Advanced details**
 
@@ -234,9 +234,9 @@ mv examplefiles-as/* /var/www/html
 19. Your final configurations for your Launch Template should be similar
     to this:
 
-    ![](./media3/image7.png)
+    ![](./media4/image7.png)
 
-![](./media3/image8.png)
+![](./media4/image8.png)
 
 20. When you are sure the configurations are correct, click **Create
     launch template** and now you are finished creating your Launch
@@ -261,7 +261,7 @@ After you finish creating the Launch Template, follow these steps:
 
 4. Select **Launch Template** and choose the one you have just created.
 
-    ![](./media3/image9.png)
+    ![](./media4/image9.png)
     
 5. Click **Next Step.**
 
@@ -312,9 +312,9 @@ After you finish creating the Launch Template, follow these steps:
 
 8. Your configurations should be similar to:
 
-![](./media3/image10.png)
+![](./media4/image10.png)
 
-![](./media3/image11.png)
+![](./media4/image11.png)
 
 9. Select **Next: Configure scaling policies**.
 
@@ -341,7 +341,7 @@ For now, you are going to skip this step.
 
     z.  **Value:** Auto Scaling Group
 
-        ![](./media3/image12.png)
+        ![](./media4/image12.png)
 
 13. Select **Review** and then **Create Auto Scaling group** and now you
     have successfully created your Auto Scaling Group!
@@ -372,7 +372,7 @@ specify a scaling metric.
 3. Under *Find Scalable Resources*, select **Choose EC2 Auto Scaling
     groups** and select the one you have just created.
 
-![](./media3/image13.png)
+![](./media4/image13.png)
 
 4. Click **Next** so that you can specify a scaling strategy and
     define:
@@ -393,7 +393,7 @@ specify a scaling metric.
 > utilization of 40%. Your resources will scale in and out as needed to
 > achieve this.
 
-![](./media3/image14.png)
+![](./media4/image14.png)
 
 7. Hit next twice and create the scaling plan. You have successfully
     created your scaling strategy!
@@ -416,7 +416,7 @@ you can test it to ensure that it works correctly.
 3. Select the **Instances** tab to see that your Auto Scaling Group is
     in the process of spinning up an EC2 instance, as shown below.
 
-![](./media3/image15.png)
+![](./media4/image15.png)
 
 4. Select the **Instance ID**, which will take you to the EC2
     Management Console.
@@ -432,17 +432,17 @@ you can test it to ensure that it works correctly.
 
 6. Copy the **Public DNS** name.
 
-![](./media3/image16.png)
+![](./media4/image16.png)
 
 7. Open a new tab in your web browser and go to that public DNS name.
     You should see this:
 
-![](./media3/image17.png)
+![](./media4/image17.png)
 
 8. Click **Generate Load**. You might have to do this a couple times to
     ensure you are keeping a constant load on your instance.
 
-![](./media3/image18.png)
+![](./media4/image18.png)
 
 > Now that you are maxing out the load on that EC2 instance to 100%,
 > your Auto Scaling Group should respond by spinning up more instances
@@ -456,12 +456,12 @@ you can test it to ensure that it works correctly.
 > Since you are maxing out the load on your EC2 instance, your CPU
 > utilization should look similar to this:
 
-![](./media3/image19.png)
+![](./media4/image19.png)
 
 > You can also view metrics in the AWS Auto Scaling page if you select
 > your scaling plan:
 
-![](./media3/image20.png)
+![](./media4/image20.png)
 
 > Based on the scaling policy you have set in your Auto Scaling Group,
 > your group should spin up a new instance to help support this increase
@@ -470,7 +470,7 @@ you can test it to ensure that it works correctly.
 > This might take a couple of minutes. Refresh the EC2 instances page
 > and you should soon see a new instance spinning up automatically.
 
-![](./media3/image21.png)
+![](./media4/image21.png)
 
 > You can also see this in the Auto Scaling Group page. If you look at
 > the details under the Active History tab, you can see that the new
@@ -492,7 +492,7 @@ spinning down these resources.
 50. First, delete your Auto Scaling Group by selecting your group,
     hitting **Actions**, and then **Delete**.
 
-![](./media3/image22.png)
+![](./media4/image22.png)
 
 Deleting your Auto Scaling Group also deletes all the EC2 instances
 associated with it.
@@ -501,7 +501,7 @@ associated with it.
     Templates in the left navigation pane, selecting the template,
     hitting **Actions,** and then **Delete.**
 
-![](./media3/image23.png)
+![](./media4/image23.png)
 
 Appendix -- Additional Reading
 ==============================
