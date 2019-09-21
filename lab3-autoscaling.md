@@ -1,4 +1,7 @@
-![](./media3/image1.emf)
+![Image result for aws
+logo](./media0/image1.jpeg)
+
+# Lab 3: EC2 Auto Scaling Hands-on Lab
 
 Overview
 ========
