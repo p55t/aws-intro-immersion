@@ -252,25 +252,25 @@ that you can define *how many* EC2 instances should be launched and
 
 After you finish creating the Launch Template, follow these steps:
 
-21. Go back to the Services menu and click **EC2.**
+1. Go back to the Services menu and click **EC2.**
 
-22. In the left navigation pane, find AUTO SCALING and click **Auto
+2. In the left navigation pane, find AUTO SCALING and click **Auto
     Scaling Groups**
 
-23. Click **Create Auto Scaling Group.**
+3. Click **Create Auto Scaling Group.**
 
-24. Select **Launch Template** and choose the one you have just created.
+4. Select **Launch Template** and choose the one you have just created.
 
     ![](./media3/image9.png)
     
-25. Click **Next Step.**
+5. Click **Next Step.**
 
-26. On the **Configure Auto Scaling group details** page, configure the
+6. On the **Configure Auto Scaling group details** page, configure the
     following:
 
-    r.  **Group name:** auto-scaling-lab
+    a.  **Group name:** auto-scaling-lab
 
-    s.  **Fleet composition:** combine purchase options and instances
+    b.  **Fleet composition:** combine purchase options and instances
 
         This is a feature that lets you create a mixed Auto Scaling
         Group with different instance types as well as different
@@ -279,16 +279,16 @@ After you finish creating the Launch Template, follow these steps:
         also cost optimize by having the option to use On-Demand,
         Reserved, and Spot instances.
 
-    t.  Try adding a new instance type by selecting a different type,
+    c.  (Optional) Try adding a new instance type by selecting a different type,
         like t3.micro
 
-    u.  **Group size:** start with 1 instance
+    d.  **Group size:** start with 1 instance
 
-    v.  **Network:** keep this the default VPC
+    e.  **Network:** keep this the default VPC
 
-    w.  **Subnet:** select the first subnet that appears
+    f.  **Subnet:** select the first subnet that appears
 
-27. Expand **Advanced Details.**
+7. Expand **Advanced Details.**
 
     Here you can see further configurations that you can make with your
     Auto Scaling Group, like the ability to associate your group with a
@@ -305,23 +305,23 @@ After you finish creating the Launch Template, follow these steps:
 > balancer and then it will distribute incoming traffic across those
 > instances. For now, you will leave this unselected and move on.
 
-x.  Select **Enable CloudWatch detailed monitoring** under Advanced
+  Select **Enable CloudWatch detailed monitoring** under Advanced
     Details.
 
 <!-- -->
 
-28. Your configurations should be similar to:
+8. Your configurations should be similar to:
 
 ![](./media3/image10.png)
 
 ![](./media3/image11.png)
 
-29. Select **Next: Configure scaling policies**.
+9. Select **Next: Configure scaling policies**.
 
     You are going to skip configuring scaling policies for now. You will
     do this in the next section of the lab.
 
-30. Continue on by selecting **Next: Configure Notifications.**
+10. Continue on by selecting **Next: Configure Notifications.**
 
 > You can configure your Auto Scaling Group to send notifications to an
 > endpoint that you choose, such as an email address or even an SQS
@@ -333,9 +333,9 @@ x.  Select **Enable CloudWatch detailed monitoring** under Advanced
 
 For now, you are going to skip this step.
 
-31. Click **Next: Configure Tags.**
+11. Click **Next: Configure Tags.**
 
-32. Add a tag and configure the following:
+12. Add a tag and configure the following:
 
     y.  **Key:** Name
 
@@ -343,7 +343,7 @@ For now, you are going to skip this step.
 
         ![](./media3/image12.png)
 
-33. Select **Review** and then **Create Auto Scaling group** and now you
+13. Select **Review** and then **Create Auto Scaling group** and now you
     have successfully created your Auto Scaling Group!
 
 Task 3: Creating Scaling Policies
@@ -365,16 +365,16 @@ lets you define how to scale in response to changing demand by using
 target tracking, which is a feature that lets you set a target value and
 specify a scaling metric.
 
-34. To start, go to the Services menu and select **AWS Auto Scaling**
+1. To start, go to the Services menu and select **AWS Auto Scaling**
 
-35. Click **Get Started** if prompted.
+2. Click **Get Started** if prompted.
 
-36. Under *Find Scalable Resources*, select **Choose EC2 Auto Scaling
+3. Under *Find Scalable Resources*, select **Choose EC2 Auto Scaling
     groups** and select the one you have just created.
 
 ![](./media3/image13.png)
 
-37. Click **Next** so that you can specify a scaling strategy and
+4. Click **Next** so that you can specify a scaling strategy and
     define:
 
     a.  **Name:** scaling-plans
@@ -384,9 +384,9 @@ specify a scaling metric.
 > own custom metrics for optimization. You can also enable predictive
 > and dynamic scaling here.
 
-38. Select the **Optimized for availability** strategy
+5. Select the **Optimized for availability** strategy
 
-39. Disable predictive scaling for now and leave the rest of the
+6. Disable predictive scaling for now and leave the rest of the
     configuration details the same
 
 > The default settings are configured to maintain an average CPU
@@ -395,7 +395,7 @@ specify a scaling metric.
 
 ![](./media3/image14.png)
 
-40. Hit next twice and create the scaling plan. You have successfully
+7. Hit next twice and create the scaling plan. You have successfully
     created your scaling strategy!
 
 Task 4: Testing the Auto Scaling Group 
@@ -404,21 +404,21 @@ Task 4: Testing the Auto Scaling Group
 Now that you have created your Auto Scaling Group and scaling strategy,
 you can test it to ensure that it works correctly.
 
-41. Hit **Close** to return back to the Auto Scaling Groups page under
+1. Hit **Close** to return back to the Auto Scaling Groups page under
     Auto Scaling listed in the navigation pane on the left.
 
-42. Select the Auto Scaling Group you have just created.
+2. Select the Auto Scaling Group you have just created.
 
 > This brings up details about your Auto Scaling Group, like the active
 > history, scaling policies, instances, and allows you to monitor
 > different metrics.
 
-43. Select the **Instances** tab to see that your Auto Scaling Group is
+3. Select the **Instances** tab to see that your Auto Scaling Group is
     in the process of spinning up an EC2 instance, as shown below.
 
 ![](./media3/image15.png)
 
-44. Select the **Instance ID**, which will take you to the EC2
+4. Select the **Instance ID**, which will take you to the EC2
     Management Console.
 
     On this page, you can see details about specific EC2 instances, like
@@ -427,19 +427,19 @@ you can test it to ensure that it works correctly.
     1-minute interval under the **Monitoring** tab. These metrics
     include CPU utilization, disk reads, disk writes, and much more.
 
-45. Wait for the instance state to say running and status checks to say
+5. Wait for the instance state to say running and status checks to say
     2/2 before moving forward.
 
-46. Copy the **Public DNS** name.
+6. Copy the **Public DNS** name.
 
 ![](./media3/image16.png)
 
-47. Open a new tab in your web browser and go to that public DNS name.
+7. Open a new tab in your web browser and go to that public DNS name.
     You should see this:
 
 ![](./media3/image17.png)
 
-48. Click **Generate Load**. You might have to do this a couple times to
+8. Click **Generate Load**. You might have to do this a couple times to
     ensure you are keeping a constant load on your instance.
 
 ![](./media3/image18.png)
@@ -448,7 +448,7 @@ you can test it to ensure that it works correctly.
 > your Auto Scaling Group should respond by spinning up more instances
 > to help support the increase in load.
 
-49. Go back to the EC2 console, make sure your instance is selected, and
+9. Go back to the EC2 console, make sure your instance is selected, and
     click the **Monitoring** tab so you can see CloudWatch detailed
     monitoring metrics.
 
