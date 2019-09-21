@@ -34,7 +34,7 @@ instance.
     user data. For more details, please check the reference in the end
     of the document )[^1]
     
-    [](./media3/image3.png)
+    ![](./media3/image3.png)
 
 2.  On the next screen, scroll down to the **Tags** section and click
     **Edit Tags**.
@@ -78,18 +78,19 @@ You now have two web servers, but you need a load balancer in front of
 these servers to give your users a single location for accessing both
 servers and to balance user requests across your web server farm.
 
-1.  ![](./media3/image10.png)Click on the **Load Balancers** link
-    in the EC2 Console.
+1.  Click on the **Load Balancers** link in the EC2 Console.
+
+    ![](./media3/image10.png)
 
 2.  Click on **Create Load Balancer** button.
 
-> ![](./media3/image11.png)
+    ![](./media3/image11.png)
 
 3.  We will be creating a Application Load Balancer today, so please
     select that option and click **Continue** to proceed to the next
     step.
 
-> ![](./media3/image12.JPG)
+    ![](./media3/image12.JPG)
 
 4.  For the load balancer name, type a name like \[YourName\]-ALB, keep
     scheme as "internet-facing", and IP address type as "ipv4". Verify
