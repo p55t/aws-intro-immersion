@@ -24,7 +24,7 @@ traffic across several EC2 nodes in a single Availability Zone.
 Let's launch another web server, similar to our existing web server
 instance.
 
-1.  ![](./media3/image3.png)Right click your web server and choose
+1.  Right click your web server and choose
     **Launch More Like This**. As it implies, this feature will launch
     another web server similar to the existing web server.
 
@@ -33,6 +33,8 @@ instance.
     configuration on the intance will need to be supplied via AMI or
     user data. For more details, please check the reference in the end
     of the document )[^1]
+    
+    [](./media3/image3.png)
 
 2.  On the next screen, scroll down to the **Tags** section and click
     **Edit Tags**.
@@ -45,15 +47,17 @@ instance.
 
     ![](./media3/image5.png)
 
-4.  ![](./media3/image6.png)Click the **Review and Launch** button
+4.  Click the **Review and Launch** button
     to continue to the next screen where you'll launch the additional
     server.
+    
+    ![](./media3/image6.png)
 
 5.  Click on **Launch** to launch your additional instance. Like your
     first instance, this newly launched instance will take a few minutes
     to boot and configure itself.
 
-![](./media3/image7.png)
+    ![](./media3/image7.png)
 
 6.  Please select the existing key pair that you created and click
     Launch Instances.
@@ -65,7 +69,7 @@ instance.
     public DNS. You'll see both instances listed in your console as
     shown below.
 
-![](./media3/image9.png)
+    ![](./media3/image9.png)
 
 Create an ALB
 =============
@@ -139,12 +143,12 @@ servers and to balance user requests across your web server farm.
     Targets tab, you should see both of your web servers are
     healthy**.**
 
-![](./media3/image18.JPG)
+    ![](./media3/image18.JPG)
 
 11. Switch back to Load Balancers, Under the Description tab, copy the
     ALB's DNS name.
 
-![](./media3/image19.JPG)
+    ![](./media3/image19.JPG)
 
 12. Open the ALB URL in a new browser tab. Hit the browser refresh
     button and you should cycle through your web servers (you may need
