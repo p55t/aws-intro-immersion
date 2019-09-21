@@ -62,8 +62,6 @@ instance.
 6.  Please select the existing key pair that you created and click
     Launch Instances.
 
-    ![](./media3/image8.tiff)
-
 7.  Once the second web server has passed its status checks, confirm the
     web server is operational by browsing to its web site using its
     public DNS. You'll see both instances listed in your console as
