@@ -48,17 +48,17 @@ in and out of the bucket.*
     S3. One way to do that is to prefix your bucket names with your
     organisation\'s name.  
 
-Bucket names must comply with the following requirements.
+>Bucket names must comply with the following requirements.
 
-Bucket names:
+>Bucket names:
 
--   Can contain lowercase letters, numbers, periods (.) and dashes (-)
+>-   Can contain lowercase letters, numbers, periods (.) and dashes (-)
 
--   Must start with a number or letter
+>-   Must start with a number or letter
 
--   Must be between 3 and 255 characters long
+>-   Must be between 3 and 255 characters long
 
--   Must not be formatted as an IP address (e.g., 265.255.5.4)
+>-   Must not be formatted as an IP address (e.g., 265.255.5.4)
 
 ***Note:** There might be additional restrictions on bucket names based
 on the region your bucket is in or how you intend to access the object.
